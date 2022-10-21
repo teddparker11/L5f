@@ -4,7 +4,7 @@ var info = [];
 
 // (async () => {await import('https://cdn.jsdelivr.net/gh/teddparker11/L5f/info.js');})();
 
-collectInfo = () => {
+let collectInfo = () => {
     info = [];
     document.querySelectorAll('.appmagic-typed-card').forEach((l) => {
         if (l.querySelector('input')) {
@@ -26,7 +26,7 @@ collectInfo = () => {
     });
 };
 
-waitFor = (sec = 1) => {
+let waitFor = (sec = 1) => {
     return new Promise((resolve) => {
         setTimeout(() => { resolve(); }, sec * 1000);
     });
