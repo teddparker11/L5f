@@ -1,4 +1,5 @@
 console.clear()
+console.log("Start it")
 
 var info = [];
 
